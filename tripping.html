@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<head>
+	<title>Vacation Rentals - Beach Houses, Condos, Cabins, Apartments & Vacation Homes | Tripping.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div style="padding:1px; margin-left:19px;">
+		<img src="https://www.tripping.com/assets/logo/logo.svg" width="70px" height="66px"/>
+	</div>
+	<div style="background-image: url(https://www.tripping.com/assets/hero-bg.jpg); background-size:cover; background-repeat: no-repeat; background-position:center; height:700px;">
+		<div style="padding-top:200px; text-align: center;">
+			<p style="font-size: 1.7em; font-weight: bold; color:white;">Search Top Vacation Rental Sites</p>
+			<p style="font-size: 1.5em; color:white;">Compare and save on vacation homes and short-term rentals in 190 countries</p>
+		</div>
+		<div class="container" style="width:80%; margin-left:auto; margin-right:auto;">
+		  <div class="row" style="padding-top:20px;">
+		    <div class="col-md-12 col-lg-4" id="ecor" onclick="ecorShow()" style="display:'block'; width:100%; height:70px; border-style: solid; border-width:1px; padding:1px; background-color: white;">
+		      <div><p style="font-size: 1.3em; float:left; padding:2px; margin:auto; position:absolute; top:23%; left:3%;">Enter City or Region</p></div>
+		    </div>
+		    <div class="col-md-12 col-lg-4" id="awt" onclick="awtShow()" style="display:'block';width:100%; height:70px; border-style: solid; border-width:1px; padding:1px; background-color: white;">
+		      <div><p style="font-size: 1.3em;float:left; padding:2px; position:absolute; top:23%; left:3%;"><i class="fa fa-calendar" style="font-size: 1.5em; padding-right:10px;">  </i>Anytime</p></div>
+		    </div>
+		    <div class="col-md-12 col-lg-3" id="hmp" onclick="hmpShow()" style="display:'block';width:100%; height:70px; border-style: solid; border-width: 1px; padding:1px; background-color: white;">
+		    	<div><p style="font-size: 1.3em;float:left; padding:2px; position:absolute; top:23%; left:3%;"><i class="fa fa-user" style="font-size: 1.5em; padding-right:10px;"></i>2 guests</p></div>
+		    </div>
+		    <div class="col-md-12 col-lg-1" id="search" style="background-color:orange; color:white; display:'block',width:100%; height:70px; border-style: solid; border-width: 1px; padding:1px; text-align:center; ">
+		    		<div><i style="font-size: 1.4em; position:absolute; top:33%;" class="fa fa-search"></i></div>
+		    </div>
+		  </div>
+		</div>
+		<div id="enterCityOrRegion" onmouseover="ecorShow()" onmouseout="ecorOff()" style="display:none; background-color: white; width:50%; margin-left:11%; margin-right:39%; padding:3px;">
+			<ul class="list-group" style="list-style-type: none;">
+				<li class="dropdown-header">RECENT SEARCHES</li>
+				<li class="list-group-item" style="font-weight: bold; border-style: none;">Worldwide <i class="fa fa-mail-forward" style="float:right;"></i></li>
+				<li class="list-group-item" style="font-weight: bold; border-style: none;">Florida <i class="fa fa-mail-forward" style="float:right;"></i></li>
+			</ul><br/>
+			<ul class="list-group" style="list-style-type: none;">
+				<li class="dropdown-header">POPULAR DESTINATIONS</li>
+				<li class="list-group-item" style="font-weight: bold; border-style: none;">Florida <i class="fa fa-mail-forward" style="float:right;"></i></li>
+				<li class="list-group-item" style="font-weight: bold; border-style: none;">Panama City Beach <i class="fa fa-mail-forward" style="float:right;"></i></li>
+				<li class="list-group-item" style="font-weight: bold; border-style: none;">Myrtle Beach <i class="fa fa-mail-forward" style="float:right;"></i></li>
+				<li class="list-group-item" style="font-weight: bold; border-style: none;">California <i class="fa fa-mail-forward" style="float:right;"></i></li>
+			</ul><br/>
+		</div>
+		<div id="atWhatTime" onmouseover="awtShow()" onmouseout="awtOff()" style="display:none; background-color: white; width:50%; margin-left:auto; margin-right:auto;">
+			<div class="container">
+				<div class="row" style="padding:15px;">
+					<div class="col-sm col-lg-6" style="padding:15px;">
+						<p style="text-align: center;"><i class="fa fa-mail-reply" style="float:left;"></i>DECEMBER 2019</p>
+						<table style="width:100%; text-align: center;">
+						  <tr>
+						    <th>Sun</th>
+						    <th>Mon</th> 
+						    <th>Tue</th>
+						    <th>Wed</th>
+						    <th>Thu</th> 
+						    <th>Fri</th>
+						    <th>Sat</th>
+						  </tr>
+						  <tr>
+						    <td>1</td>
+						    <td>2</td>
+						    <td>3</td>
+						    <td>4</td>
+						    <td>5</td>
+						    <td>6</td>
+						    <td>7</td>
+						  </tr>
+						  <tr>
+						    <td>8</td>
+						    <td>9</td>
+						    <td>10</td>
+						    <td>11</td>
+						    <td>12</td>
+						    <td>13</td>
+						    <td>14</td>
+						  </tr>
+						  <tr>
+						  	<td>15</td>
+						    <td>16</td>
+						    <td>17</td>
+						    <td>18</td>
+						    <td>19</td>
+						    <td>20</td>
+						    <td>21</td>
+						  </tr>
+						  <tr>
+						  	<td>22</td>
+						    <td>23</td>
+						    <td>24</td>
+						    <td>25</td>
+						    <td>26</td>
+						    <td>27</td>
+						    <td>28</td>
+						  </tr>
+						  <tr>
+						  	<td>29</td>
+						    <td>30</td>
+						    <td>31</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm col-lg-6" style="padding:15px;">
+						<p style="text-align: center;">JANUARY 2020 <i class="fa fa-mail-forward" style="float:right;"></i></p>
+						<table style="width:100%; text-align: center;">
+						  <tr>
+						    <th>Sun</th>
+						    <th>Mon</th> 
+						    <th>Tue</th>
+						    <th>Wed</th>
+						    <th>Thu</th> 
+						    <th>Fri</th>
+						    <th>Sat</th>
+						  </tr>
+						  <tr>
+						    <td></td>
+						    <td></td>
+						    <td></td>
+						    <td>1</td>
+						    <td>2</td>
+						    <td>3</td>
+						    <td>4</td>
+						  </tr>
+						  <tr>
+						    <td>5</td>
+						    <td>6</td>
+						    <td>7</td>
+						    <td>8</td>
+						    <td>9</td>
+						    <td>10</td>
+						    <td>11</td>
+						  </tr>
+						  <tr>
+						  	<td>12</td>
+						    <td>13</td>
+						    <td>14</td>
+						    <td>15</td>
+						    <td>16</td>
+						    <td>17</td>
+						    <td>18</td>
+						  </tr>
+						  <tr>
+						  	<td>19</td>
+						    <td>20</td>
+						    <td>21</td>
+						    <td>22</td>
+						    <td>23</td>
+						    <td>24</td>
+						    <td>25</td>
+						  </tr>
+						  <tr>
+						  	<td>26</td>
+						    <td>27</td>
+						    <td>28</td>
+						    <td>29</td>
+						  	<td>30</td>
+						    <td>31</td>
+						    <td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="howManyPeople" onmouseover="hmpShow()" onmouseout="hmpOff()" style="display:none; background-color: white; width:50%; margin-left:auto; margin-right:auto;">
+			<ul class="list-group" style="list-style-type: none;">
+				<li class="dropdown-header">GUEST AND BEDROOMS</li>
+				<li class="list-group-item" style="font-size:1.5em;"><i class="fa fa-user" style=" padding-right: 18px;"></i>1 guests<i class="fa fa-plus"  style="float:right;"></i><i class="fa fa-minus" style="float:right; padding-right:10px;"></i></li>
+				<li class="list-group-item" style="font-size:1.5em;"><i class="fa fa-bed" style="padding-right: 10px;"></i>1 bedroom<i class="fa fa-plus"  style="float:right;"></i><i class="fa fa-minus" style="float:right; padding-right:10px;"></i></li>
+				<li class="list-group-item"><input type="checkbox" value="withChildren" style="padding-right: 10px; font-size: 1.6em;">   I am travelling with children<br/><p style="text-align: center;">Knowing you're travelling with children allows us to show more accurate prices</p></li>
+				
+			</ul>
+		</div>
+	</div>
+	<br/><br/>
+	<div class="container-lg">
+		<p style="font-size: 1.7em; font-weight:bold;">OUR TOP DESTINATIONS</p>
+		<div class="row">
+			<div class="col-lg-6 col-sm">
+				<figure style="display:block; position:relative;">
+					<img src="https://cdn.hometogo.net/assets/media/jpg/51e60c2f3a26a13eb79d0d3edb8671ee.jpg" width="100%" height="80%"/>
+					<figcaption style="position:absolute; font-size: 1.8em; font-weight: bold; color:white; left:4%; bottom:2%">Berlin</figcaption>
+				</figure>
+			</div>
+			<div class="col-lg-6 col-sm">
+				<figure style="display:block; position:relative;">
+					<img src="https://cdn.hometogo.net/assets/media/jpg/53c53e48af005957c8cac94d0292f71e.jpg" width="100%" height="80%"/>
+					<figcaption style="position:absolute; font-size: 1.8em; font-weight: bold; color:white; left:4%; bottom:2%">Miami</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-sm">
+				<figure style="display:block; position:relative;">
+					<img src="https://cdn.hometogo.net/assets/media/jpg/801e1d4499f98aa2b92c81e7d96f28f4.jpg" width="100%" height="80%"/>
+					<figcaption style="position:absolute; font-size: 1.8em; font-weight: bold; color:white; left:4%; bottom:2%">New York</figcaption>
+				</figure>
+			</div>
+			<div class="col-lg-6 col-sm">
+				<figure style="display:block; position:relative;">
+					<img src="https://cdn.hometogo.net/assets/media/jpg/407d32931b83e88d528714c4d1abb0f5.jpg" width="100%" height="80%"/>
+					<figcaption style="position:absolute; font-size: 1.8em; font-weight: bold; color:white; left:4%; bottom:2%">Phuket</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-sm">
+				<figure style="display:block; position:relative;">
+					<img src="https://cdn.hometogo.net/assets/media/jpg/5e4093de0b399962a847978146ce4e42.jpg" width="100%" height="80%"/>
+					<figcaption style="position:absolute; font-size: 1.8em; font-weight: bold; color:white; left:4%; bottom:2%">Rio de Janerio</figcaption>
+				</figure>
+			</div>
+			<div class="col-lg-6 col-sm">
+				<figure style="display:block; position:relative;">
+					<img src="https://cdn.hometogo.net/assets/media/jpg/6f6876a7477cc9926cfba2160e4d1710.jpg" width="100%" height="80%"/>
+					<figcaption style="position:absolute; font-size: 1.8em; font-weight: bold; color:white; left:4%; bottom:2%">San Francisco</figcaption>
+				</figure>
+			</div>
+		</div>		
+	</div>
+	<br/><br/>
+	<div class="container-lg">
+		<p style="font-size: 1.7em; font-weight:bold;">TOP LOCATIONS</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm col-lg-3">
+					Asheville<br/>
+					Atlanta<br/>
+					Austin<br/>
+					Big Bear Lake<br/>
+					Blue Ridge<br/>
+					Boston<br/>
+					Chicago<br/>
+					Clearwater Beach<br/>
+					Cocoa Beach<br/>
+					Denver<br/>
+				</div>
+				<div class="col-sm col-lg-3">
+					Destin<br/>
+					Fort Lauderdale<br/>
+					Fort Myers Beach<br/>
+					Gatlinburg<br/>
+					Gulf Shores<br/>
+					Hampton Beach<br/>
+					Key West<br/>
+					Kissimmee<br/>
+					Lake Tahoe<br/>
+					Las Vegas<br/>
+				</div>
+				<div class="col-sm col-lg-3">
+					Los Angeles<br/>
+					Miami Beach<br/>
+					Montauk<br/>
+					Myrtle Beach<br/>
+					Nashville<br/>
+					New Orleans<br/>
+					New Smyrna Beach<br/>
+					New York City<br/>
+					Orange Beach<br/>
+					Orlando<br/>
+				</div>
+				<div class="col-sm col-lg-3">
+					Outer Banks<br/>
+					Panama City Beach<br/>
+					Pigeon Forge<br/>
+					San Antonio<br/>
+					San Diego<br/>
+					San Francisco<br/>
+					Seattle<br/>
+					Surfside Beach<br/>
+					Tampa<br/>
+					Virginia Beach<br/>
+				</div>
+			</div>
+		</div>
+	</div><br/><br/>
+	<div class="container-lg">
+		<p style="font-size: 1.7em; font-weight:bold;">TOP COUNTRIES</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm col-lg-3">
+					Australia<br/>
+					Austria<br/>
+					Bahamas<br/>
+					Belize<br/>
+					Brazil<br/>
+					British Virgin Islands<br/>
+					Canada<br/>
+					Colombia<br/>
+					Costa Rica<br/>
+					Cuba<br/>
+				</div>
+				<div class="col-sm col-lg-3">
+					Dominican Republic<br/>
+					France<br/>
+					Germany<br/>
+					Greece<br/>
+					Honduras<br/>
+					Hong Kong<br/>
+					India<br/>
+					Ireland<br/>
+					Israel<br/>
+					Italy<br/>
+				</div>
+				<div class="col-sm col-lg-3">
+					Jamaica<br/>
+					Japan<br/>
+					Malaysia<br/>
+					Mexico<br/>
+					Netherlands<br/>
+					New Zealand<br/>
+					Panama<br/>
+					Philippines<br/>
+					Portugal<br/>
+					Puerto Rico<br/>
+				</div>
+				<div class="col-sm col-lg-3">
+					Singapore<br/>
+					South Africa<br/>
+					Spain<br/>
+					Switzerland<br/>
+					Taiwan<br/>
+					Thailand<br/>
+					Trinidad and Tobago<br/>
+					Turkey<br/>
+					United Kingdom<br/>
+					United States<br/>
+				</div>
+			</div>
+		</div>
+	</div><br/><br/>
+	<div class="container-lg">
+		<p style="font-size: 1.7em; font-weight:bold;">Tripping.com is the world's #1 site for vacation rentals</p>
+		<p>One search lets you filter, compare and sort over 12,000,000 available properties from the worlds top vacation rental sites including HomeAway, VRBO, TripAdvisor, Booking.com and more. When you use Tripping.com to plan your trip and book your vacation rental, you never have to wonder if youre getting the best deal. Find the perfect vacation rental for your next trip to over 190 countries.</p>
+		<p>From luxury condos in major cities, to furnished beach rentals, cozy ski cabins and more, Tripping.com offers the widest variety of unique accommodations for your next trip. Whether youre seeking a lakefront cabin for a quick getaway, a modern apartment in New York City, or a beachfront property with sunset views in Hawaii, Tripping.com can help you find and book it all.</p>
+	</div><br/><br/>
+	<div class="container-lg">
+		<p style="font-size: 1.7em; font-weight:bold;">Why stay in a vacation rental?</p>
+		<p>Vacation rentals can offer more space, privacy, and flexibility compared to hotel rooms. Depending on the property, youll have access to amenities like hot tubs, gourmet kitchens, washer/dryers, free onsite parking, private pools, and so many more.</p>
+		<p>Vacation rentals are available in a wide range of locations so you can choose where you want to stay, like the center of the city or a local neighborhood with great nightlife. Plus, if youre traveling with your family or a large group, having multiple bedrooms and bathrooms means theres enough space so everyone can stay together under one roof.</p>
+		<p>Last but not least, at rates of up to 80% off traditional hotel rooms, vacation rentals are often the most affordable, cost effective option. So if youd like to feel home away from home on your next trip, in a place where you can cook, lounge and entertain? Stay in a vacation rental.</p>
+	</div><br/>
+	<div style="background-color: #FDFDFD; padding:15px;">
+		<div class="container-lg" style=" margin-left:auto; margin-right:auto;">
+			<div class="row">
+				<div class="col-5 col-lg-4">
+					<ul style="list-style-type: none; float: left;">
+						<li>TRIPPING</li>
+						<li>About</li>
+						<li>FAQ</li>
+						<li>Blog</li>
+						<li>
+					<img src="https://www.tripping.com/assets/logo/logo.svg" width="70px" height="66px"/></li>
+					</ul><br/>
+				</div>
+				<div class="col-5 col-lg-4">
+					<ul style="list-style-type: none; float:left;">
+						<li>PRIVACY & TERMS</li>
+						<li>About</li>
+						<li>FAQ</li>
+						<li>Blog</li>
+					</ul>
+				</div>
+				<div class="col-0 col-lg-4">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="tripping.js"></script>
+</body>
+</html>
+
+
+
+
+
+

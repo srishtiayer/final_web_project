@@ -1,0 +1,75 @@
+function ecorShow(){
+	if(window.innerWidth>993){
+		document.getElementById("enterCityOrRegion").style.display="block";
+		document.getElementById("atWhatTime").style.display="none";
+		document.getElementById("howManyPeople").style.display="none";
+	}else{
+		document.getElementById("enterCityOrRegion").style.display="block";
+		document.getElementById("awt").style.display="none";
+		document.getElementById("hmp").style.display="none";
+		document.getElementById("search").style.display="none";
+	}
+}
+function awtShow(){
+	if(window.innerWidth>993){
+		document.getElementById("atWhatTime").style.display="block";
+		document.getElementById("enterCityOrRegion").style.display="none";
+		document.getElementById("howManyPeople").style.display="none";
+		document.getElementById("howManyPeople").style.width="30%";
+		document.getElementById("howManyPeople").style.marginRight="35%";
+		document.getElementById("howManyPeople").style.marginLeft="35%";
+	}else{
+		document.getElementById("atWhatTime").style.display="block";
+		document.getElementById("hmp").style.display="none";
+		document.getElementById("search").style.display="none";
+		document.getElementById("ecor").style.visibility="hidden";
+	}
+}
+function hmpShow(){
+	if(window.innerWidth>993){
+		document.getElementById("howManyPeople").style.display="block";
+		document.getElementById("atWhatTime").style.display="none";
+		document.getElementById("enterCityOrRegion").style.display="none";
+		document.getElementById("howManyPeople").style.width="35%";
+		document.getElementById("howManyPeople").style.marginRight="17%";
+		document.getElementById("howManyPeople").style.marginLeft="48%";
+	}else{
+		document.getElementById("howManyPeople").style.display="block";
+		document.getElementById("awt").style.visibility="hidden";
+		document.getElementById("search").style.display="none";
+		document.getElementById("ecor").style.visibility="hidden";
+		document.getElementById("howManyPeople").style.width="78%";
+		document.getElementById("howManyPeople").style.marginRight="auto";
+		document.getElementById("howManyPeople").style.marginLeft="auto";
+	}
+}
+function ecorOff(){
+	if(window.innerWidth>993){
+		document.getElementById("enterCityOrRegion").style.display="none";
+	}else{
+		document.getElementById("enterCityOrRegion").style.display="none";
+		document.getElementById("awt").style.display="block";
+		document.getElementById("hmp").style.display="block";
+		document.getElementById("search").style.display="block";
+	}
+}
+function awtOff(){
+	if(window.innerWidth>993){
+		document.getElementById("atWhatTime").style.display="none";
+	}else{
+		document.getElementById("atWhatTime").style.display="none";
+		document.getElementById("ecor").style.visibility="visible";
+		document.getElementById("hmp").style.display="block";
+		document.getElementById("search").style.display="block";
+	}
+}
+function hmpOff(){
+	if(window.innerWidth>993){
+		document.getElementById("howManyPeople").style.display="none";
+	}else{
+		document.getElementById("howManyPeople").style.display="none";
+		document.getElementById("ecor").style.visibility="visible";
+		document.getElementById("awt").style.visibility="visible";
+		document.getElementById("search").style.display="block";
+	}
+}
